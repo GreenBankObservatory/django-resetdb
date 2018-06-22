@@ -12,7 +12,7 @@ import sys
 from django.core.management.base import BaseCommand
 
 from django_resetdb.util import DB
-from django_resetdb.resetdb import dropdb
+from django_resetdb.dbops import dropdb
 
 logger = logging.getLogger(__name__)
 
@@ -32,9 +32,9 @@ class Command(BaseCommand):
 
     def handle(self, *args, **options):
         if options["verbosity"] > 1:
-            logger.setLevel(logging.DEBUG)
+            logging.getLogger(__name__.split(".")[0]).setLevel(logging.DEBUG)
 
-        print("Dropping your database {!r}".format(DB["NAME"]))
+        print("Dropping your database '{}'".format(DB["NAME"]))
         try:
             dropdb(force=options["force"])
         except subprocess.CalledProcessError as error:

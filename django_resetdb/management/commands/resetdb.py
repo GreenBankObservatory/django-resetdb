@@ -13,7 +13,7 @@ from django.core.management.base import BaseCommand
 from django.core.management import call_command
 
 from django_resetdb.util import DB
-from django_resetdb.resetdb import cleardb, clone_psql_db
+from django_resetdb.dbops import cleardb, clone_psql_db
 
 logger = logging.getLogger(__name__)
 
