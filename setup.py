@@ -11,7 +11,7 @@ with open(os.path.join(script_dir, 'README.md'), encoding='utf-8') as readme_fil
 
 setup(
     name='django-resetdb',
-    version='0.1.0',
+    version='0.2.0',
     description='Management command to reset your Django database',
     long_description=long_description,
     long_description_content_type='text/markdown',
