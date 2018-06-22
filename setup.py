@@ -12,7 +12,7 @@ with open(os.path.join(script_dir, "README.rst"), encoding="utf-8") as readme_fi
 
 setup(
     name="django_resetdb",
-    version="0.2.2",
+    version="0.2.3",
     description="Management command to reset your Django database",
     long_description=long_description,
     long_description_content_type="text/markdown",
