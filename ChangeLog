@@ -1,0 +1,29 @@
+CHANGES
+=======
+
+0.3.1
+-----
+
+* Various minor tweaks
+
+0.3.0
+-----
+
+* Switched to pbr for packaging
+
+0.2.3
+-----
+
+* Forgot to add dbops.py
+
+0.2.2
+-----
+
+* Created dumpdb cmd
+
+0.2.0
+-----
+
+* Created createdb and dropdb. Refactored to accomodate
+* First draft is complete! Seems stable so far..
+* Create LICENSE

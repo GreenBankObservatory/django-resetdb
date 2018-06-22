@@ -42,7 +42,7 @@ Manual Installation
 ::
 
     $ git clone https://github.com/GreenBankObservatory/django-resetdb
-    $ pip install django-resetdb
+    $ ./django-resetdb/setup.py install
 
 Configuration
 -------------
